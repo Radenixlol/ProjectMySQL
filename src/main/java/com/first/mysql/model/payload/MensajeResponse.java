@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.first.mysql.model.dto;
+package com.first.mysql.model.payload;
+
 import java.io.Serializable;
-import java.util.Date;
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
@@ -17,12 +17,9 @@ import lombok.ToString;
 @ToString
 @Builder
 
-public class ClienteDto implements Serializable{
+public class MensajeResponse implements Serializable{
     
-    private Integer idCliente;
-    private String nombre;
-    private String apellido;
-    private String correo;
-    private Date fechaRegistro;
+    private String mensaje;
+    private Object object;
     
 }
